@@ -4,73 +4,59 @@
 </head>
 
 <body>
-<table class='title'>
-<tr>
-<td>Motorkerékpár regisztrációs adó</td>
-</tr>
-</table>
+
+<div class='frame'>
+
+<div class='title'>
+<h1>Motorkerékpár regisztrációs adó</h1>
+</div>
 
 <form name='calculator' method='post' class='calc-form'>
 
-<table id='motor'>
+<div id='motor'>
 
-<tr>
-<td colspan='2' class='text'>Az első forgalomba helyezés dátuma: </td>
-<tr>
+<h3>Az első forgalomba helyezés dátuma: </h3>
 
-<tr>
-<td>Év: 
+<div class='year_div'>
+<h4>Év: 
 <select name='m_year' class='date'>
 	###year-m-options###
 </select>
-</td>
+</h4>
+</div>
 
-<td>Hónap:
+<div class='month_div'>
+<h4>Hónap:
 <select name='m_month' class='date'>
 	###month-m-options###
 </select>
-</td>
-</tr>
+</h4>
+</div>
 
-<tr id='error'>
-<td colspan='2'>###error###</td>
-</tr>
+<div id='error'>
+<h3>###error###</h3>
+</div>
 
-<tr class='text'>
-<td colspan='2' class='padding-top'>Hengerűrtartalom </td>
-</tr>
-<tr>
-<td colspan='2'>
+<h3>Hengerűrtartalom: </h3>
 <select name='barrel_m' class='barrel_m'>
 	###barrel-m-options###
 </select>
-</td>
-</tr>
-</table>
+</div>
 
-<table class='submit'>
+<div class='submit'>
 <input type='hidden' value='submitted' name='submitted'>
-<tr>
-<td><input type='submit' id='submit' value='Számol' class='form-submit'></td>
-</tr>
-</table>
+<input type='submit' id='submit' value='Számol' class='form-submit'>
+</div>
 
 </form>
 
-<table id='sum' class='###sum-visibility###'>	
-<tr>
-<td class='month'>###month-message###</td>
-</tr>
+<div id='sum' class='###sum-visibility###'>	
 
-<tr>
-<td>###sum-message###</td>
-</tr>
-</table>
+<h5>###month-message###</h5>
 
-<table class='zero'>
-<tr>
-<td></td>
-</tr>
-</table>
+<h4>###sum-message###</h4>
+</div>
+
+</div>
 
 </body>

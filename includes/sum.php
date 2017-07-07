@@ -3,7 +3,7 @@
 $sum_message = '';
 $month_message = '';
 
-if(isset($_POST['submitted']) && ($c_year != $n_year || $c_month <= $n_month))
+if(isset($_POST['submitted']) && ($m_year != $n_year || $m_month <= $n_month))
 {
 	$month_message = 'Az első forgalomba helyezéstől</br>eltelt hónapok száma: ' . $debug['month'];
 
